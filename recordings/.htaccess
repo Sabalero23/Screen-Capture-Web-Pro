@@ -1,0 +1,6 @@
+Options -Indexes
+<FilesMatch "\.(mp4|webm|mkv)$">
+    Order Allow,Deny
+    Allow from all
+    Header set X-Content-Type-Options "nosniff"
+</FilesMatch>
